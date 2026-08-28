@@ -1,0 +1,279 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d4038;
+    background-color: #fffdf8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #e8d9c5;
+}
+
+header h1 {
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #5b4636;
+}
+
+/* Navegación */
+nav {
+    min-height: 75px;
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #fffdf8;
+}
+
+.logo img {
+    width: 58px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+nav ul a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav ul a:hover {
+    color: #a26d46;
+}
+
+.carrito {
+    padding: 10px 14px;
+    border: 1px solid #a26d46;
+    border-radius: 5px;
+    color: #7d5234;
+}
+
+/* Banner principal */
+.hero {
+    min-height: 430px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-texto {
+    width: min(650px, 90%);
+    position: absolute;
+    color: white;
+}
+
+.hero-texto h2 {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.hero-texto p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 24px;
+    background-color: #a26d46;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    background-color: #7d5234;
+}
+
+/* Productos */
+.destacados {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.destacados h2 {
+    margin-bottom: 35px;
+    color: #5b4636;
+    font-size: 27px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.producto {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f4ece2;
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 15px 0 8px;
+}
+
+.producto p {
+    margin-bottom: 15px;
+    color: #a26d46;
+    font-weight: bold;
+}
+
+.producto a {
+    font-size: 14px;
+    color: #7d5234;
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #5b4636;
+    color: white;
+}
+
+footer p + p {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+/* Celulares: preparado para 375px */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero,
+    .hero img {
+        height: 420px;
+    }
+
+    .hero-texto h2 {
+        font-size: 28px;
+    }
+
+    .hero-texto p {
+        font-size: 16px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+}
+nav ul a.activo {
+    padding: 10px;
+    border: 1px solid #a26d46;
+    border-radius: 4px;
+}
+
+.encabezado-catalogo {
+    padding: 55px 20px;
+    text-align: center;
+    background-color: #e8d9c5;
+}
+
+.encabezado-catalogo h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    color: #5b4636;
+}
+
+.encabezado-catalogo p {
+    font-size: 17px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.categorias a {
+    display: block;
+    padding: 12px 18px;
+    border: 1px solid #d2c0aa;
+    border-radius: 4px;
+    color: #725f50;
+    background-color: #f7f0e8;
+}
+
+.categorias a:hover,
+.categorias a:focus {
+    color: #5b4636;
+    background-color: #e8d9c5;
+}
+
+.catalogo {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.catalogo h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+    color: #5b4636;
+}
+
+.catalogo .producto a {
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #a26d46;
+    color: white;
+    text-decoration: none;
+}
+
+.catalogo .producto a:hover {
+    background-color: #7d5234;
+}
