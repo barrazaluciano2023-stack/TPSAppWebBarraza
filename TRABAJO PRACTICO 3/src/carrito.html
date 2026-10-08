@@ -1,105 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planta tu sueño - Carrito</title>
-  <link rel="stylesheet" href="recursos/css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planta tu sueño - Carrito</title>
+
+    <link rel="stylesheet" href="recursos/css/estilos.css">
 </head>
 
 <body>
 
-  <header class="cabecera-principal">
-    <h1>PLANTA TU SUEÑO</h1>
+    <header class="cabecera-principal">
 
-    <img class="logo"
-         src="recursos/img/logo.png"
-         alt="Logo de Planta tu sueño">
+        <h1>PLANTA TU SUEÑO</h1>
 
-    <nav aria-label="Menú principal">
-      <div class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="nosotros.html">Nosotros</a>
-      </div>
+        <img class="logo"
+             src="recursos/img/logo.png"
+             alt="Logo de Planta tu sueño">
 
-      <a class="carrito" href="carrito.html">🛒 Carrito</a>
-    </nav>
-  </header>
+        <nav aria-label="Menú principal">
 
+            <input type="checkbox" id="menu-toggle">
 
-  <main class="contenido-principal">
+            <label for="menu-toggle" class="menu-icon">☰</label>
 
-    <section class="productos-carrito">
+            <div class="menu">
 
-      <article>
-        <img src="recursos/img/vela-canasta.jpg"
-             alt="Vela canasta roja">
+                <a href="index.html">Inicio</a>
 
-        <h3>Vela canasta</h3>
+                <a href="catalogo.html">Catálogo</a>
 
-        <p>Cantidad: 1</p>
-        <p>Precio: $2.500</p>
+                <a href="nosotros.html">Nosotros</a>
 
-        <button>Eliminar</button>
-      </article>
+            </div>
+
+            <a class="carrito menu-activo" href="carrito.html">
+                🛒 Carrito
+            </a>
+
+        </nav>
+
+    </header>
 
 
-      <article>
-        <img src="recursos/img/vela-loto.jpg"
-             alt="Vela flor de loto">
+    <main class="contenido-principal">
 
-        <h3>Vela flor de loto</h3>
+        <section class="productos-carrito">
 
-        <p>Cantidad: 1</p>
-        <p>Precio: $3.000</p>
+            <article>
 
-        <button>Eliminar</button>
-      </article>
+                <img src="recursos/img/vela-canasta.jpg"
+                     alt="Vela canasta">
 
+                <div class="info-producto">
 
-      <article>
-        <img src="recursos/img/bandeja-circular.jpg"
-             alt="Bandeja circular blanca">
+                    <h3>Vela canasta</h3>
 
-        <h3>Bandeja circular</h3>
+                    <p>Precio: $2.500</p>
 
-        <p>Cantidad: 1</p>
-        <p>Precio: $5.000</p>
+                    <p>Cantidad: 1</p>
 
-        <button>Eliminar</button>
-      </article>
+                </div>
 
+                <button class="eliminar">
+                    Eliminar
+                </button>
 
-      <article>
-        <img src="recursos/img/bandeja-lisa.jpg"
-             alt="Bandeja lisa blanca">
-
-        <h3>Bandeja lisa</h3>
-
-        <p>Cantidad: 1</p>
-        <p>Precio: $4.000</p>
-
-        <button>Eliminar</button>
-      </article>
-
-    </section>
+            </article>
 
 
-    <h3 class="total-carrito">Total: $14.500</h3>
+            <article>
+
+                <img src="recursos/img/vela-loto.jpg"
+                     alt="Vela flor de loto">
+
+                <div class="info-producto">
+
+                    <h3>Vela flor de loto</h3>
+
+                    <p>Precio: $3.000</p>
+
+                    <p>Cantidad: 1</p>
+
+                </div>
+
+                <button class="eliminar">
+                    Eliminar
+                </button>
+
+            </article>
 
 
-    <section class="acciones-carrito">
-      <button>Cancelar</button>
-      <button>Confirmar compra</button>
-    </section>
+            <article>
 
-  </main>
+                <img src="recursos/img/bandeja-circular.jpg"
+                     alt="Bandeja circular blanca">
+
+                <div class="info-producto">
+
+                    <h3>Bandeja circular</h3>
+
+                    <p>Precio: $5.000</p>
+
+                    <p>Cantidad: 1</p>
+
+                </div>
+
+                <button class="eliminar">
+                    Eliminar
+                </button>
+
+            </article>
 
 
-  <footer class="pie-pagina">
-    <p>Planta tu sueño - Productos artesanales</p>
-  </footer>
+            <article>
+
+                <img src="recursos/img/bandeja-lisa.jpg"
+                     alt="Bandeja lisa blanca">
+
+                <div class="info-producto">
+
+                    <h3>Bandeja lisa</h3>
+
+                    <p>Precio: $4.000</p>
+
+                    <p>Cantidad: 1</p>
+
+                </div>
+
+                <button class="eliminar">
+                    Eliminar
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <p class="total-carrito">
+            Total: $14.500
+        </p>
+
+
+        <div class="acciones-carrito">
+
+            <button>
+                Cancelar
+            </button>
+
+            <button>
+                Confirmar compra
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>Planta tu sueño - Productos artesanales</p>
+
+    </footer>
 
 </body>
+
 </html>

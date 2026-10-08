@@ -2,18 +2,22 @@
     font-family: 'Sora';
     src: url(./fuentes/Sora-Regular.ttf);
 }
+
 * {
     box-sizing: border-box;
 }
+
 html {
     font-family: 'Sora', sans-serif;
 }
+
 nav {
     position: relative;
     display: flex;
     justify-content: center;
     background-color: #82a083;
 }
+
 body {
     margin: 0;
     background-color: #f2f2f2;
@@ -35,19 +39,26 @@ nav a{
     text-decoration: none;
     font-size: 20px;
 }
+
 nav a:hover {
     background-color: #6f8c70;
 }
+
 /* Estilos para la cabecera y el menú de navegación */
+
 .menu {
     display: flex;
     gap: 25px;
 }
+
 .carrito {
    position: absolute;
     right: 20px;
     font-size: 25px;
     top: -80px;
+}
+.menu-activo {
+    border-bottom: 3px solid white;
 }
 .logo {
     position: absolute;
@@ -57,11 +68,23 @@ nav a:hover {
     height: auto;
 }
 
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
 /* Estilos para la sección de productos destacados */
+
 .portada {
     text-align: center;
     padding: 0;
 }
+
 .h2-productos-destacados {
     padding: 20px;
      text-align: center;
@@ -100,21 +123,26 @@ nav a:hover {
     border-radius: 15px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
 .productos-destacados article img {
      width: 100%;
     height: 220px;
     object-fit: contain;
     border-radius: 10px;
-
 }
+
 .productos-destacados article h3 {
     margin: 12px 5px 5px;
     color: #354A32;
 }
+
 .productos-destacados article p {
     margin: 0 5px 5px;
 }
-/* Estilos para la sección de categorías y catalogo*/
+
+
+/* Estilos para la sección de categorías y catalogo */
+
 .categorias {
     display: flex;
     justify-content: center;
@@ -131,18 +159,22 @@ nav a:hover {
     cursor: pointer;
     font-size: 25px;
 }
+
 .categorias button:hover {
     color: #f8f7f7;
 }
+
 .categoria-activa {
     border-bottom: 3px solid #82a083 !important;
 }
+
 .productos-catalogo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
+
 .productos-catalogo article {
     position: relative;
     background-color: white;
@@ -151,6 +183,7 @@ nav a:hover {
     text-align: left;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
 .productos-catalogo article img {
     width: 100%;
     height: 250px;
@@ -167,6 +200,7 @@ nav a:hover {
     margin: 0 5px 5px;
     font-size: 18px;
 }
+
 .agregar-carrito {
     position: absolute;
     right: 10px;
@@ -185,7 +219,9 @@ nav a:hover {
     cursor: pointer;
 }
 
+
 /* Estilos para la sección de carrito */
+
 .productos-carrito {
     display: flex;
     flex-direction: column;
@@ -265,7 +301,8 @@ nav a:hover {
 }
 
 
-/* Estilos para la sección de nosotros */
+/*sección de nosotros */
+
 .sobre-nosotros {
     background-color: white;
     padding: 30px;
@@ -282,6 +319,7 @@ nav a:hover {
 .sobre-nosotros p {
     line-height: 1.6;
 }
+
 .contacto {
     background-color: white;
     padding: 30px;
@@ -293,12 +331,14 @@ nav a:hover {
     margin-top: 0;
     color: #354A32;
 }
+
 .contacto form {
     display: flex;
     flex-direction: column;
     gap: 8px;
     max-width: 600px;
 }
+
 .contacto input,
 .contacto textarea {
     padding: 10px;
@@ -306,10 +346,12 @@ nav a:hover {
     border-radius: 8px;
     font-family: Arial, sans-serif;
 }
+
 .contacto textarea {
     min-height: 120px;
     resize: vertical;
 }
+
 .contacto button {
     align-self: flex-start;
     margin-top: 10px;
@@ -328,6 +370,8 @@ nav a:hover {
 .contacto button:hover {
     background-color: #6f8c70;
 }
+
+
 /* Estilos para la cabecera, contenido y pie de página */
 
 
@@ -339,6 +383,7 @@ nav a:hover {
   position: relative;
   min-height: 170px;
 }
+
 .cabecera-principal h1 {
     text-align: center;
     margin: 0;
@@ -357,6 +402,8 @@ nav a:hover {
   padding: 20px;
   text-align: center;
 }
+
+
 /* Estilos para responsividad */
 
 @media (max-width: 768px) {
@@ -364,6 +411,7 @@ nav a:hover {
     .productos-catalogo {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .productos-catalogo {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -372,7 +420,11 @@ nav a:hover {
             grid-template-columns: repeat(2, 1fr);
         }
 }
+
+
 @media (max-width: 480px) {
+
+    
   .productos-catalogo {
           grid-template-columns: 1fr;
       }
@@ -389,22 +441,25 @@ nav a:hover {
     .contacto {
         padding: 20px;
     }
-  .cabecera-principal h1 {
-        font-size: 24px;
-        padding: 20px 10px;
-    }
+
+    .cabecera-principal h1 {
+            font-size: 24px;
+            padding: 20px 10px;
+        }
 
     .logo {
         width: 65px;
         left: 10px;
         top: 10px;
+        display: none;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding-bottom: 10px;
+    .cabecera-principal nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    position: static;
     }
 
     .menu {
@@ -413,14 +468,18 @@ nav a:hover {
         gap: 5px;
     }
 
-    nav a {
-        padding: 10px;
-        font-size: 16px;
-    }
+    .cabecera-principal nav a {
+    padding: 10px;
+    font-size: 16px;
+    }   
 
     .carrito {
-        position: static;
+        position: absolute;
+        right: 20px;
+        top: 75px;
+        z-index: 2;
     }
+
     .productos-catalogo {
         grid-template-columns: 1fr;
     }
@@ -428,8 +487,33 @@ nav a:hover {
     .productos-destacados {
         grid-template-columns: 1fr;
     }
+
      .categorias {
         flex-wrap: wrap;
         gap: 15px;
+    }
+
+
+    /* menu hamburguesa */
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        position: absolute;
+        left: 25px;
+        top: 75px;
+        z-index: 2;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
     }
 }

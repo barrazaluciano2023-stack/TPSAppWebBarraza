@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planta tu sueño - Catálogo</title>
-  <link rel="stylesheet" href="recursos/css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planta tu sueño - Catálogo</title>
+
+    <link rel="stylesheet" href="recursos/css/estilos.css">
 </head>
 
 <body>
 
-  <header class="cabecera-principal">
+    <header class="cabecera-principal">
+
     <h1>PLANTA TU SUEÑO</h1>
 
     <img class="logo"
@@ -17,81 +21,129 @@
          alt="Logo de Planta tu sueño">
 
     <nav aria-label="Menú principal">
-      <div class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="nosotros.html">Nosotros</a>
-      </div>
 
-      <a class="carrito" href="carrito.html">🛒 Carrito</a>
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <div class="menu">
+
+            <a href="index.html">Inicio</a>
+
+            <a class="menu-activo" href="catalogo.html">Catálogo</a>
+
+            <a href="nosotros.html">Nosotros</a>
+
+        </div>
+
+        <a class="carrito" href="carrito.html">
+            🛒 Carrito
+        </a>
+
     </nav>
-  </header>
+
+</header>
 
 
-  <main class="contenido-principal">
+    <main class="contenido-principal">
+
+        <nav class="categorias" aria-label="Categorías de productos">
+
+            <button class="categoria-activa">
+                Bandejas
+            </button>
+
+            <button>
+                Macetas
+            </button>
+
+            <button>
+                Posa Vasos
+            </button>
+
+            <button>
+                Frascos
+            </button>
+
+        </nav>
 
 
-    <nav class="categorias" aria-label="Categorías de productos">
-      <button class="categoria-activa">Bandejas</button>
-      <button>Macetas</button>
-      <button>Posa Vasos</button>
-      <button>Frascos</button>
-    </nav>
+        <section class="productos-catalogo">
+
+            <article>
+
+                <img src="recursos/img/bandeja-circular.jpg"
+                     alt="Bandeja circular blanca">
+
+                <h3>Bandeja circular</h3>
+
+                <p>$5.000</p>
+
+                <button class="agregar-carrito">
+                    +
+                </button>
+
+            </article>
 
 
-    <section class="productos-catalogo">
+            <article>
 
-      <article>
-        <img src="recursos/img/bandeja-circular.jpg"
-             alt="Bandeja circular blanca">
+                <img src="recursos/img/bandeja-granulada.jpg"
+                     alt="Bandeja granulada blanca">
 
-        <h3>Bandeja circular</h3>
-        <p>$5.000</p>
+                <h3>Bandeja granulada</h3>
 
-        <button class="agregar-carrito">+</button>
-      </article>
+                <p>$4.500</p>
 
+                <button class="agregar-carrito">
+                    +
+                </button>
 
-      <article>
-        <img src="recursos/img/bandeja-granulada.jpg"
-             alt="Bandeja granulada blanca">
-
-        <h3>Bandeja granulada</h3>
-        <p>$4.500</p>
-
-        <button class="agregar-carrito">+</button>
-      </article>
+            </article>
 
 
-      <article>
-        <img src="recursos/img/bandeja-lisa.jpg"
-             alt="Bandeja lisa blanca">
+            <article>
 
-        <h3>Bandeja lisa</h3>
-        <p>$4.000</p>
+                <img src="recursos/img/bandeja-lisa.jpg"
+                     alt="Bandeja lisa blanca">
 
-        <button class="agregar-carrito">+</button>
-      </article>
+                <h3>Bandeja lisa</h3>
 
+                <p>$4.000</p>
 
-      <article>
-        <img src="recursos/img/bandeja-relieve.jpg"
-             alt="Bandeja con relieve blanca">
+                <button class="agregar-carrito">
+                    +
+                </button>
 
-        <h3>Bandeja relieve</h3>
-        <p>$3.000</p>
-
-        <button class="agregar-carrito">+</button>
-      </article>
-
-    </section>
-
-  </main>
+            </article>
 
 
-  <footer class="pie-pagina">
-    <p>Planta tu sueño - Productos artesanales</p>
-  </footer>
+            <article>
+
+                <img src="recursos/img/bandeja-relieve.jpg"
+                     alt="Bandeja con relieve blanca">
+
+                <h3>Bandeja relieve</h3>
+
+                <p>$3.000</p>
+
+                <button class="agregar-carrito">
+                    +
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>Planta tu sueño - Productos artesanales</p>
+
+    </footer>
 
 </body>
+
 </html>
