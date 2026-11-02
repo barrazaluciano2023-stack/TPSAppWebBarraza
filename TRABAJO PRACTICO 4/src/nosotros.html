@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planta tu sueño - Nosotros</title>
+
+    <link rel="stylesheet" href="recursos/css/estilos.css">
+    <script type="module" src="recursos/js/nosotros.js"></script>
+</head>
+
+<body>
+
+    <header class="cabecera-principal">
+
+    <h1>PLANTA TU SUEÑO</h1>
+
+    <img class="logo"
+         src="recursos/img/logo.png"
+         alt="Logo de Planta tu sueño">
+
+    <nav aria-label="Menú principal">
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <div class="menu">
+
+            <a href="index.html">Inicio</a>
+
+            <a href="catalogo.html">Catálogo</a>
+
+            <a class="menu-activo" href="nosotros.html">Nosotros</a>
+
+        </div>
+
+        <a class="carrito" href="carrito.html">
+            🛒 Carrito
+        </a>
+
+    </nav>
+
+</header>
+
+
+    <main class="contenido-principal">
+
+        <section class="sobre-nosotros">
+
+            <h2>Sobre nosotros</h2>
+
+            <p>
+                Planta tu sueño es un emprendimiento dedicado
+                a la elaboración de productos artesanales.
+            </p>
+
+            <p>
+                Creamos productos pensados para decorar,
+                organizar y darle un toque especial a cada espacio.
+            </p>
+
+            <p>
+                Nuestro objetivo es ofrecer productos artesanales
+                realizados con dedicación y cuidado.
+            </p>
+
+        </section>
+
+
+        <section class="contacto">
+
+            <h2>Contacto</h2>
+
+            <form id="formulario-contacto">
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Ingrese su nombre">
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Ingrese su email">
+
+
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
+                <textarea id="mensaje"
+                          name="mensaje"
+                          placeholder="Escriba su mensaje"></textarea>
+
+
+                <button type="submit">
+                    Enviar
+                </button>
+                <p id="mensaje-validacion"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>Planta tu sueño - Productos artesanales</p>
+
+    </footer>
+
+</body>
+
+</html>
